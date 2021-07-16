@@ -1,0 +1,355 @@
+[
+    {
+        "id": "e502207a.70e9a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "43e1e90e.cb08b8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ec3ed903.9d3c58",
+        "type": "ui_tab",
+        "name": "Prediction",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a42ae38b.4bb79",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3d6c1f7b.c642d",
+        "type": "ui_group",
+        "name": "Enter The Values",
+        "tab": "ec3ed903.9d3c58",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f405a5d3.f86dc8",
+        "type": "ui_form",
+        "z": "e502207a.70e9a",
+        "name": "",
+        "label": "",
+        "group": "3d6c1f7b.c642d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "preg",
+                "value": "p",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "plas",
+                "value": "pl",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "pres",
+                "value": "pr",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "skin",
+                "value": "s",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "test",
+                "value": "t",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "mass",
+                "value": "m",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "pedi",
+                "value": "pe",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "age",
+                "value": "age",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "p": "",
+            "pl": "",
+            "pr": "",
+            "s": "",
+            "t": "",
+            "m": "",
+            "pe": "",
+            "age": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "28806dbb.ee7122"
+            ]
+        ]
+    },
+    {
+        "id": "28806dbb.ee7122",
+        "type": "function",
+        "z": "e502207a.70e9a",
+        "name": "PreToken",
+        "func": "global.set(\"p\",msg.payload.p)\nglobal.set(\"pl\",msg.payload.pl)\nglobal.set(\"pr\",msg.payload.pr)\nglobal.set(\"s\",msg.payload.s)\nglobal.set(\"t\",msg.payload.t)\nglobal.set(\"m\",msg.payload.m)\nglobal.set(\"pe\",msg.payload.pe)\nglobal.set(\"age\",msg.payload.age)\nvar apikey = \"OtryflR71EQ0i9NyQI6XWduZ0H3r8-2vIjmqMeLbKOsa\";\nmsg.headers = {\"content-type\":\"application/x-www-form-urlencoded\"}\nmsg.payload = {\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 320,
+        "wires": [
+            [
+                "2f17295f.f61b76"
+            ]
+        ]
+    },
+    {
+        "id": "2f17295f.f61b76",
+        "type": "http request",
+        "z": "e502207a.70e9a",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 970,
+        "y": 400,
+        "wires": [
+            [
+                "b03abcb9.a3ec8"
+            ]
+        ]
+    },
+    {
+        "id": "b03abcb9.a3ec8",
+        "type": "function",
+        "z": "e502207a.70e9a",
+        "name": "Pre Prediction",
+        "func": "var p = global.get(\"p\")\nvar pl = global.get(\"pl\")\nvar pr = global.get(\"pr\")\nvar s = global.get(\"s\")\nvar t = global.get(\"t\")\nvar m = global.get(\"m\")\nvar pe = global.get(\"pe\")\nvar age = global.get(\"age\")\n\nvar token = msg.payload.access_token\n\n\n// var instance_id = \"\"\nmsg.headers = {\"content-type\":\"appliction/json\",\"Authorization\":\"Bearer\"+token,\"Accept\":\"application/json\"}\nmsg.payload = {\"input_data\": [{\"fields\": [[\"preg\",\"plas\",\"pres\",\"Skin\",\"test\",\"mass\",\"pedi\",\"age\"]],\"values\": [[p,pl,pr,s,t,m,pe,age]]}]}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 360,
+        "wires": [
+            [
+                "efff886b.4b9be8"
+            ]
+        ]
+    },
+    {
+        "id": "efff886b.4b9be8",
+        "type": "http request",
+        "z": "e502207a.70e9a",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/e27bb34a-fd39-403d-95fd-f42f12b2bee1/predictions?version=2021-07-05",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1310,
+        "y": 460,
+        "wires": [
+            [
+                "4a3111a.979cdf"
+            ]
+        ]
+    },
+    {
+        "id": "c26281a1.36193",
+        "type": "debug",
+        "z": "e502207a.70e9a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4a3111a.979cdf",
+        "type": "function",
+        "z": "e502207a.70e9a",
+        "name": "",
+        "func": "msg.payload = msg.payload.predictions[0].values[0][0]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 220,
+        "wires": [
+            [
+                "c26281a1.36193",
+                "9fecffdf.f2ed5"
+            ]
+        ]
+    },
+    {
+        "id": "9fecffdf.f2ed5",
+        "type": "ui_text",
+        "z": "e502207a.70e9a",
+        "group": "3d6c1f7b.c642d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Class : ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 2210,
+        "y": 360,
+        "wires": []
+    }
+]
